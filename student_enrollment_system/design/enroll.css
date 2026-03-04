@@ -1,0 +1,243 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #070707;
+    padding: 15px 40px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo p {
+    text-decoration: none;
+    color: rgb(11, 11, 11);
+    padding-top: 20px;
+}
+
+.sidebar {
+    width: 260px;
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: fixed;
+    top: 70px;
+    height: calc(100% - 70px);
+    overflow-y: auto;
+}
+
+.menu {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.menu li {
+    width: 100%;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: 500;
+    transition: 0.3s;
+    border-radius: 8px;
+    margin: 4px 10px;
+}
+
+.menu a i {
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    background-color: navy;
+    color: white;
+}
+
+.menu a:hover i {
+    color: #f1f3f5;
+}
+
+.menu a.active {
+    background-color: navy;
+    color: white;
+}
+
+.menu a.active i {
+    color: white;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 100px 40px 40px;
+    /* top padding prevents overlap with header */
+    flex: 1;
+}
+
+.content h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: 500;
+    border-radius: 8px;
+    margin: 10px;
+    width: calc(100% - 20px);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.logout-btn i {
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.logout-btn a {
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background-color: #fe0b14;
+    color: white;
+}
+
+.logout-btn:hover i {
+    color: #f1f3f5;
+}
+
+/* profile na */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.user-profile:hover {
+    background: #f1f2f6;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: navy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 3px 6px rgba(230, 126, 34, 0.2);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.user-role {
+    font-size: 12px;
+    color: #7f8c8d;
+    line-height: 1.2;
+}
+
+button.rate {
+    position: absolute;
+    right: 250px;
+    border: none;
+    background-color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+button.rate:hover {
+    color: navy;
+    border-radius: 8px;
+}
+
+button.rate i:hover {
+    color: navy;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+    border: none;
+}
+
+.enrollment-container {
+    margin-top: 50px;
+    margin-left: 290px;
+    padding: 100px 40px;
+}
+
+thead tr th {
+    border-bottom: none;
+}
+
+.table {
+    table-layout: fixed;
+}
+
+.table thead tr th {
+    border: none;
+    border-bottom: none;
+    background-color: #f8f9fa;
+    padding: 15px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}

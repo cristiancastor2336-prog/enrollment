@@ -1,0 +1,86 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 2px;
+    margin-top: 12px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button {
+    border: none;
+    width: 100%;
+    padding: 15px;
+    background: navy;
+    color: white;
+    border-radius: 4px;
+}
+
+.button-container button:hover {
+    background: rgb(0, 0, 83);
+}
+
+.input-field:active {
+    border: none;
+}
+
+.link-register {
+    margin-top: 3px;
+    text-align: center;
+}
+
+.register-link {
+    opacity: 0.8;
+}
+
+.link-register a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
